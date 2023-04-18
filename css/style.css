@@ -1,0 +1,188 @@
+:root {
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    --darkBlueMain: hsl(217, 54%, 11%);
+    --darkBlueCard: hsl(216, 50%, 16%);
+    --darkBlueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --Fuente: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+   
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Global */
+
+body {
+    background-color: var(--darkBlueMain);
+    font-family: var(--Fuente);
+    font-size: 1.8rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1rem;
+}       
+
+h1 {
+    font-size: 2rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--darkBlueLine);
+    margin: 2rem 0;
+}
+
+.hover {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.hover:hover {
+    color: var(--cyan);
+
+}
+
+/* contenedor */
+
+.contenedor {
+    max-width: 30rem;
+    background-color: var(--darkBlueCard);
+    padding: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 4%;
+}
+
+
+.images {
+    position: relative;
+}
+
+.capa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 99%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background: hsla(178, 100%, 50%, 0.7);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.capa:hover {
+    opacity: 1;
+}
+
+.eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+main p {
+    color: var(--softBlue);
+    font-weight: 300;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+}
+
+.cyan {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+.softb {
+    color: var(--softBlue);
+    font-weight: 400;
+}
+
+.eth {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.izq {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.der {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* hr */
+
+.creation {
+    display: flex;
+    color: var(--softBlue);
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.creation h5 {
+    font-weight: 400;
+}
+
+.avatar {
+    width: 10%;
+    border: 1px solid white; 
+    border-radius: 100%;
+    
+}
+
+/* footer */
+
+.footer {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.link  {
+    text-decoration: none;
+}
+
+.link:link {
+    color: blue;
+}
+
+.link:visited {
+    color: cyan;
+}
+
+.link:hover {
+    color: hotpink;
+  }

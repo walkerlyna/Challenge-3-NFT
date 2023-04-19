@@ -80,13 +80,14 @@ hr {
 
 .images {
     position: relative;
+    height: 26rem;
 }
 
 .capa {
     position: absolute;
     top: 0;
-    height: 260px;
     width: 100%;
+    height: 100%;
     opacity: 0;
     background: hsla(178, 100%, 50%, 0.7);
     cursor: pointer;
